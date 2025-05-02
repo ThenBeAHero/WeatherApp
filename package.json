@@ -1,0 +1,18 @@
+{
+  "name": "weatherapp",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "weatherapp is a simple, elegant weather web app that shows current weather, air quality, and forecasts. Built with vanilla JavaScript and OpenWeather API.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest assests/tests/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "node-fetch": "^3.3.2"
+  }
+}
