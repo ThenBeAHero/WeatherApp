@@ -1,0 +1,202 @@
+{
+  "info": {
+    "name": "WeatherApp OpenWeatherMap API",
+    "description": "This Postman collection contains requests that mirror how the WeatherApp app uses the OpenWeatherMap API.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Current Weather",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://api.openweathermap.org/data/2.5/weather?lat=48.8566&lon=2.3522&units=metric&appid={{API_KEY}}",
+          "protocol": "https",
+          "host": [
+            "api",
+            "openweathermap",
+            "org"
+          ],
+          "path": [
+            "data",
+            "2.5",
+            "weather"
+          ],
+          "query": [
+            {
+              "key": "lat",
+              "value": "48.8566"
+            },
+            {
+              "key": "lon",
+              "value": "2.3522"
+            },
+            {
+              "key": "units",
+              "value": "metric"
+            },
+            {
+              "key": "appid",
+              "value": "{{API_KEY}}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "5-Day Forecast",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://api.openweathermap.org/data/2.5/forecast?lat=48.8566&lon=2.3522&units=metric&appid={{API_KEY}}",
+          "protocol": "https",
+          "host": [
+            "api",
+            "openweathermap",
+            "org"
+          ],
+          "path": [
+            "data",
+            "2.5",
+            "forecast"
+          ],
+          "query": [
+            {
+              "key": "lat",
+              "value": "48.8566"
+            },
+            {
+              "key": "lon",
+              "value": "2.3522"
+            },
+            {
+              "key": "units",
+              "value": "metric"
+            },
+            {
+              "key": "appid",
+              "value": "{{API_KEY}}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Air Pollution",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://api.openweathermap.org/data/2.5/air_pollution?lat=48.8566&lon=2.3522&appid={{API_KEY}}",
+          "protocol": "https",
+          "host": [
+            "api",
+            "openweathermap",
+            "org"
+          ],
+          "path": [
+            "data",
+            "2.5",
+            "air_pollution"
+          ],
+          "query": [
+            {
+              "key": "lat",
+              "value": "48.8566"
+            },
+            {
+              "key": "lon",
+              "value": "2.3522"
+            },
+            {
+              "key": "appid",
+              "value": "{{API_KEY}}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Reverse Geocoding",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://api.openweathermap.org/geo/1.0/reverse?lat=48.8566&lon=2.3522&limit=5&appid={{API_KEY}}",
+          "protocol": "http",
+          "host": [
+            "api",
+            "openweathermap",
+            "org"
+          ],
+          "path": [
+            "geo",
+            "1.0",
+            "reverse"
+          ],
+          "query": [
+            {
+              "key": "lat",
+              "value": "48.8566"
+            },
+            {
+              "key": "lon",
+              "value": "2.3522"
+            },
+            {
+              "key": "limit",
+              "value": "5"
+            },
+            {
+              "key": "appid",
+              "value": "{{API_KEY}}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "City Search (Direct Geo)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://api.openweathermap.org/geo/1.0/direct?q=London&limit=5&appid={{API_KEY}}",
+          "protocol": "http",
+          "host": [
+            "api",
+            "openweathermap",
+            "org"
+          ],
+          "path": [
+            "geo",
+            "1.0",
+            "direct"
+          ],
+          "query": [
+            {
+              "key": "q",
+              "value": "London"
+            },
+            {
+              "key": "limit",
+              "value": "5"
+            },
+            {
+              "key": "appid",
+              "value": "{{API_KEY}}"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "API_KEY",
+      "value": "f160cc3e68db509860c45ece941f8e51"
+    }
+  ]
+}
