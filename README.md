@@ -1,4 +1,4 @@
-#  WeatheriApp
+#  WeatherApp
 
 WeatherApp është një aplikacion i thjeshtë, elegant për motin që shfaq të dhëna të azhurnuara të motit për qytete të ndryshme. Ai përdor OpenWeatherMap API për të marrë të dhëna në kohë reale si temperatura, cilësia e ajrit, oraret e lindjes dhe perëndimit të diellit, dhe parashikimin për 5 ditë dhe çdo 3 orë.
 
@@ -17,9 +17,9 @@ WeatherApp është një aplikacion i thjeshtë, elegant për motin që shfaq të
 
 WeatherApp përfshin testim me [Jest](https://jestjs.io/), duke përfshirë:
 
-- ✅ Teste njësie për `module.js` (funksione ndihmëse të kohës dhe cilësisë së ajrit)
-- ✅ Teste njësie për `api.js` (ndërtimi i URL-ve dhe kërkesat me `fetch`)
-- ✅ Test integrimi për `app.js` (përpunimi i të dhënave dhe manipulimi i DOM-it)
+- Teste njësie për `module.js` (funksione ndihmëse të kohës dhe cilësisë së ajrit)
+- Teste njësie për `api.js` (ndërtimi i URL-ve dhe kërkesat me `fetch`)
+- Test integrimi për `app.js` (përpunimi i të dhënave dhe manipulimi i DOM-it)
 
 Për të ekzekutuar testet:
 ```bash
